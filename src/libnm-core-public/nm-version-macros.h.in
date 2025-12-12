@@ -91,7 +91,7 @@
 #define NM_API_VERSION                                                                                  \
     (((NM_MINOR_VERSION % 2) == 1)                                                                      \
         ? NM_ENCODE_VERSION (NM_MAJOR_VERSION, NM_MINOR_VERSION + 1, 0                               )  \
-        : NM_ENCODE_VERSION (NM_MAJOR_VERSION, NM_MINOR_VERSION    , ((NM_MICRO_VERSION + 1) / 2) * 2))
+        : NM_ENCODE_VERSION (NM_MAJOR_VERSION, NM_MINOR_VERSION    , NM_MICRO_VERSION + 1)
 
 /* deprecated. */
 #define NM_VERSION_CUR_STABLE NM_API_VERSION
